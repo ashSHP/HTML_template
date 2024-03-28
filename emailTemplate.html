@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./css/index.css" rel="stylesheet" type="text/css" /> -->
     <link
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
@@ -17,31 +17,143 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .journey-divider {
+        background: #cfd2df;
+        width: 272px;
+        height: 3px;
+        flex-shrink: 0;
+      }
+    </style>
   </head>
-  <body>
-    <main class="newsletter-bg">
-      <div class="container">
-        <div class="NL-title-container">
-          <h1 class="NL-title">The Executive Summary</h1>
-          <p class="NL-para">
+  <body style="font-family: Inter">
+    <main style="background: var(--Gray---Lightest, #f8f9fa)">
+      <div
+        style="
+          width: 600px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          padding: 50px;
+          margin: 0 auto;
+          background: var(--White, #fff);
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+          "
+        >
+          <h1
+            style="
+              color: var(--Black, #203b54);
+              text-align: center;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 900;
+              line-height: 100%; /* 16px */
+              letter-spacing: 0.64px;
+              text-transform: uppercase;
+            "
+          >
+            The Executive Summary
+          </h1>
+          <p
+            style="
+              color: var(--Gray, #546681);
+              text-align: center;
+              font-family: Inter;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+            "
+          >
             Lessons and insights in Executive Comms and Through Leadership
             strategy
           </p>
-          <div class="orange-underline"></div>
+          <div
+            style="
+              width: 46px;
+              height: 4.777px;
+              flex-shrink: 0;
+              background: var(--Red, #f56565);
+            "
+          ></div>
         </div>
 
-        <div class="NL-post-container">
-          <h1 class="post-title">What’s trending in January?</h1>
-          <p class="post-para">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h1
+            style="
+              color: var(--Black, #203b54);
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 100%;
+            "
+          >
+            What’s trending in January?
+          </h1>
+          <p
+            style="
+              color: var(--Black, #203b54);
+              font-family: Inter;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+            "
+          >
             We analyzed the top 12,000 posts created by Executives with
             companies of over 5,000 employees on LinkedIn.
           </p>
 
-          <div class="postContainer">
-            <div class="postdiv-style">
-              <img class="posts" src="./images/post1.png" style="height: 100%;"/>
-              <p class="para2">
-                <span class="analysis">ANALYSIS:</span>
+          <div style="display: flex; flex-direction: column; gap: 30px">
+            <div style="display: flex; flex-direction: column; gap: 30px">
+              <img
+                src="./images/post1.png"
+                style="
+                  height: 100%;
+                  width: 532px;
+                  /* height: 236px; */
+                  border-top-left-radius: 14px;
+                  border-top-right-radius: 14px;
+                  margin-left: -7px;
+                "
+              />
+              <p
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                "
+              >
+                <span
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                  >ANALYSIS:</span
+                >
 
                 Here’s a few words about why we think the post above worked. Is
                 it the content? Is it the timing of the post? Is it the
@@ -49,10 +161,38 @@
               </p>
             </div>
 
-            <div class="postdiv-style">
-              <img class="posts" src="./images/post2.png" style="height: 100%;"/>
-              <p class="para2">
-                <span class="analysis">ANALYSIS:</span>
+            <div style="display: flex; flex-direction: column; gap: 30px">
+              <img
+                src="./images/post2.png"
+                style="
+                  height: 100%;
+                  width: 532px;
+                  border-top-left-radius: 14px;
+                  border-top-right-radius: 14px;
+                  margin-left: -7px;
+                "
+              />
+              <p
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                "
+              >
+                <span
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                  >ANALYSIS:</span
+                >
 
                 Here’s a few words about why we think the post above worked. Is
                 it the content? Is it the timing of the post? Is it the
@@ -60,10 +200,38 @@
               </p>
             </div>
 
-            <div class="postdiv-style">
-              <img class="posts" src="./images/post3.png" style="height: 100%;"/>
-              <p class="para2">
-                <span class="analysis">ANALYSIS:</span>
+            <div style="display: flex; flex-direction: column; gap: 30px">
+              <img
+                src="./images/post3.png"
+                style="
+                  height: 100%;
+                  width: 532px;
+                  border-top-left-radius: 14px;
+                  border-top-right-radius: 14px;
+                  margin-left: -7px;
+                "
+              />
+              <p
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                "
+              >
+                <span
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                  >ANALYSIS:</span
+                >
 
                 Here’s a few words about why we think the post above worked. Is
                 it the content? Is it the timing of the post? Is it the
@@ -74,12 +242,47 @@
         </div>
 
         <div style="margin-top: 15px; margin-bottom: 15px">
-          <img class="posts" src="./images/Strategy Session.png" style="height: 100%;"/>
+          <img
+            src="./images/Strategy Session.png"
+            style="
+              height: 100%;
+              width: 532px;
+              border-top-left-radius: 14px;
+              border-top-right-radius: 14px;
+              margin-left: -7px;
+            "
+          />
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 15px">
-          <h1 class="data-nugget">Data Nugget</h1>
-          <div class="video-king-container">
+          <h1
+            style="
+              color: var(--Gray, #546681);
+              text-align: center;
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 100%;
+            "
+          >
+            Data Nugget
+          </h1>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 25px;
+              width: 531px;
+              padding: 25px;
+              padding-top: 35px;
+              padding-bottom: 35px;
+              border-radius: 10px;
+              border: 1px solid var(--Gray, #546681);
+            "
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -99,8 +302,29 @@
                 </clipPath>
               </defs>
             </svg>
-            <h1 class="video-king-title">Video is King</h1>
-            <p class="video-king-para">
+            <h1
+              style="
+                color: var(--Black, #203b54);
+                text-align: center;
+                font-family: Inter;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+              "
+            >
+              Video is King
+            </h1>
+            <p
+              style="
+                color: var(--Black, #203b54);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+              "
+            >
               Video gets
               <span style="font-weight: 800">334% more engagement</span>
               than image post.
@@ -108,10 +332,30 @@
           </div>
         </div>
 
-        <div class="journey-container">
-          <h2 class="journey-title">Journey to 25,000</h2>
-          <div class="journey-divider"></div>
-          <div class="koolaid-container">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <h2
+            style="
+              color: #005aeb;
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+          >
+            Journey to 25,000
+          </h2>
+          <div
+            style="
+              background: #cfd2df;
+              width: 272px;
+              height: 3px;
+              flex-shrink: 0;
+            "
+          ></div>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
             <img
               src="./images/kool-aid.png"
               style="width: 160px; height: 151px; flex-shrink: 0"
@@ -124,8 +368,28 @@
                 margin-top: 10px;
               "
             >
-              <h1 class="koolaid-title">We drink our own Kool-Aid</h1>
-              <p class="koolaid-para">
+              <h1
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 16px;
+                "
+              >
+                We drink our own Kool-Aid
+              </h1>
+              <p
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 11px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 18px;
+                "
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -138,45 +402,201 @@
           </div>
         </div>
 
-        <div class="roast-container">
-          <h2 class="roast-title">Roast a Post</h2>
-          <div class="journey-divider"></div>
-          <div class="roastdiv-container">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <h2
+            style="
+              color: var(--Red, #f56565);
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+          >
+            Roast a Post
+          </h2>
+          <div
+            style="
+              background: #cfd2df;
+              width: 272px;
+              height: 3px;
+              flex-shrink: 0;
+            "
+          ></div>
+          <div
+            style="
+              border-radius: 10px;
+              background: var(--Red---Light, #feebeb);
+              padding: 28px;
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              margin-top: 10px;
+            "
+          >
             <img src="./images/roast-post.png" width="290px" height="346px" />
 
             <div style="display: flex; flex-direction: column; gap: 46px">
               <div class="flexcol-container">
-                <h1 class="roastdiv-title">Account Details</h1>
-                <p class="roastdiv-para1">Jose Fernandez da Ponte</p>
+                <h1
+                  style="
+                    color: var(--Primary, #005aeb);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  Account Details
+                </h1>
+                <p
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  Jose Fernandez da Ponte
+                </p>
               </div>
               <div class="flexcol-container">
-                <h1 class="roastdiv-title">Connections</h1>
-                <p class="roastdiv-para2">500+</p>
+                <h1
+                  style="
+                    color: var(--Primary, #005aeb);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  Connections
+                </h1>
+                <p
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  500+
+                </p>
               </div>
               <div class="flexcol-container">
-                <h1 class="roastdiv-title">Followers</h1>
-                <p class="roastdiv-para2">10K+</p>
+                <h1
+                  style="
+                    color: var(--Primary, #005aeb);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  Followers
+                </h1>
+                <p
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  10K+
+                </p>
               </div>
               <div class="flexcol-container">
-                <h1 class="roastdiv-title">Location</h1>
-                <p class="roastdiv-para1">San Francisco Bay Area</p>
+                <h1
+                  style="
+                    color: var(--Primary, #005aeb);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  "
+                >
+                  Location
+                </h1>
+                <p
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  "
+                >
+                  San Francisco Bay Area
+                </p>
               </div>
             </div>
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 15px">
-            <p class="para2">
-              <span class="analysis">ANALYSIS:</span>
+            <p
+              style="
+                color: var(--Black, #203b54);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              "
+            >
+              <span
+                style="
+                  color: var(--Black, #203b54);
+                  font-family: Inter;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                "
+                >ANALYSIS:</span
+              >
 
               Here’s a few words about why we think the post above worked. Is it
               the content? Is it the timing of the post? Is it the relevance or
               timeliness?
             </p>
 
-            <div class="post-image-container">
-              <div class="thepost-col-container">
-                <h3 class="postimage-title">The Post:</h3>
-                <ul class="postimage-para">
+            <div style="display: flex; gap: 25px">
+              <div style="display: flex; flex-direction: column; gap: 3px">
+                <h3
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                  "
+                >
+                  The Post:
+                </h3>
+                <ul
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    margin-left: -23px;
+                  "
+                >
                   <li>
                     Starts with a bold question: Should leaders care about
                     negativity? The post hints and nudges readers forward with
@@ -188,9 +608,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="thepost-col-container">
-                <h3 class="postimage-title">The Image:</h3>
-                <ul class="postimage-para">
+              <div style="display: flex; flex-direction: column; gap: 3px">
+                <h3
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                  "
+                >
+                  The Image:
+                </h3>
+                <ul
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    margin-left: -23px;
+                  "
+                >
                   <li>
                     The topic is relatable, showcasing the power of simplicity.
                     It invites leaders to discuss an underestimated topic.
@@ -203,67 +644,307 @@
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 14px">
-          <h2 class="blue-title">Product Updates</h2>
-          <div class="journey-divider"></div>
+          <h2
+            style="
+              color: #005aeb;
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+          >
+            Product Updates
+          </h2>
+          <div
+            style="
+              background: #cfd2df;
+              width: 272px;
+              height: 3px;
+              flex-shrink: 0;
+            "
+          ></div>
           <div class="">
-            <h1 class="product-h1-title">
+            <h1
+              style="
+                color: var(--Black, #203b54);
+                font-family: Inter;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+              "
+            >
               How we're making Exec Comms easier for you
             </h1>
-            <div class="product-container">
-              <div class="product-div">
-                <img src="./images/product-updates.png" style="height: 100%;"/>
-                <h2 class="product-title">Product Update Highlight</h2>
-                <p class="product-para">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+              "
+            >
+              <div
+                style="
+                  background: var(--Yellow---Light, #fef3d5);
+                  padding: 26px;
+                "
+              >
+                <img src="./images/product-updates.png" style="height: 100%" />
+                <h2
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    margin-top: 12px;
+                    margin-bottom: 10px;
+                    line-height: 100%;
+                  "
+                >
+                  Product Update Highlight
+                </h2>
+                <p
+                  style="
+                    color: var(--Black, #203b54);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                  "
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
               </div>
-              <button class="demo-button">Request A Demo</button>
+              <button
+                style="
+                  border-radius: 4px;
+                  background: var(--Primary, #005aeb);
+                  color: var(--White, #fff);
+                  text-align: center;
+                  font-family: Inter;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 500;
+                  padding: 12px;
+                  outline: none;
+                  border: none;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                "
+              >
+                Request A Demo
+              </button>
             </div>
           </div>
         </div>
 
         <div style="display: flex; flex-direction: column; gap: 14px">
-          <h2 class="blue-title">Executives On The Move</h2>
-          <div class="journey-divider"></div>
+          <h2
+            style="
+              color: #005aeb;
+              font-family: Roboto;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+          >
+            Executives On The Move
+          </h2>
+          <div
+            style="
+              background: #cfd2df;
+              width: 272px;
+              height: 3px;
+              flex-shrink: 0;
+            "
+          ></div>
 
           <div>
-            <h1 class="product-h1-title">
+            <h1
+              style="
+                color: var(--Black, #203b54);
+                font-family: Inter;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+              "
+            >
               Who Recently Got Promoted to the C-Suite?
             </h1>
-            <div class="people-container">
-              <div class="people-single-div">
-                <img src="./images/alex.png" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"/>
-                <div style="padding: 15px;">
-                  <h4 class="people-name">Alex Chriss</h4>
-                  <h5 class="people-desig">Paypal CEO</h5>
-                  <p class="people-para">
+            <div style="display: flex; gap: 12px; margin-top: 20px">
+              <div
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+                "
+              >
+                <img
+                  src="./images/alex.png"
+                  style="
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                  "
+                />
+                <div style="padding: 15px">
+                  <h4
+                    style="
+                      color: #355e81;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 16px;
+                      text-decoration-line: underline;
+                    "
+                  >
+                    Alex Chriss
+                  </h4>
+                  <h5
+                    style="
+                      color: #676767;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16px;
+                    "
+                  >
+                    Paypal CEO
+                  </h5>
+                  <p
+                    style="
+                      color: #6e7f90;
+                      font-family: Inter;
+                      font-size: 9px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 14px;
+                    "
+                  >
                     Alex Chriss has spent more than two decades harnessing the
                     power of technology to help individuals and small businesses
                     solve....
                   </p>
                 </div>
               </div>
-              <div class="people-single-div">
-                <img src="./images/michelle.png" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"/>
-                <div style="padding: 15px;">
-                  <h4 class="people-name">Michelle Gass</h4>
-                  <h5 class="people-desig">Levi Strauss CEO</h5>
-                  <p class="people-para">
+              <div
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+                "
+              >
+                <img
+                  src="./images/michelle.png"
+                  style="
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                  "
+                />
+                <div style="padding: 15px">
+                  <h4
+                    style="
+                      color: #355e81;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 16px;
+                      text-decoration-line: underline;
+                    "
+                  >
+                    Michelle Gass
+                  </h4>
+                  <h5
+                    style="
+                      color: #676767;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16px;
+                    "
+                  >
+                    Levi Strauss CEO
+                  </h5>
+                  <p
+                    style="
+                      color: #6e7f90;
+                      font-family: Inter;
+                      font-size: 9px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 14px;
+                    "
+                  >
                     Michelle Gass is stepping up to the corner office at Kohl’s
                     Corp. — ushering in a new era at the $18.7 billion retailer
                     that is reinventing for...
                   </p>
                 </div>
               </div>
-              <div class="people-single-div">
-                <img src="./images/lauren.png" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"/>
-                <div style="padding: 15px;">
-                  <h4 class="people-name">Lauren Weinberg</h4>
-                  <h5 class="people-desig">Peloton CMO</h5>
-                  <p class="people-para">
+              <div
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+                "
+              >
+                <img
+                  src="./images/lauren.png"
+                  style="
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                  "
+                />
+                <div style="padding: 15px">
+                  <h4
+                    style="
+                      color: #355e81;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 16px;
+                      text-decoration-line: underline;
+                    "
+                  >
+                    Lauren Weinberg
+                  </h4>
+                  <h5
+                    style="
+                      color: #676767;
+                      font-family: Inter;
+                      font-size: 11px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16px;
+                    "
+                  >
+                    Peloton CMO
+                  </h5>
+                  <p
+                    style="
+                      color: #6e7f90;
+                      font-family: Inter;
+                      font-size: 9px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 14px;
+                    "
+                  >
                     The leading connected fitness platform, today announced the
                     appointment of Lauren Weinberg as Peloton's new Chief
                     Marketing Officer (CMO).
